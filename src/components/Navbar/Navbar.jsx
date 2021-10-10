@@ -30,19 +30,19 @@ export const Navbar = () => {
                                 <FontAwesomeIcon icon={faUser} className="nav-icon me-3" />
                                 <p className="nav-link-text text-dark">Perfil</p>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
                                 <li className="d-flex align-items-center">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faUserCheck} className="nav-icon me-3 text-secondary" />
-                                        <a class="dropdown-link my-2 text-secondary" href="#">Representante Legal</a>
+                                        <a className="dropdown-link my-2 text-secondary" href="#">Representante Legal</a>
                                     </div>
                                 </li>
 
                                 <li className="d-flex align-items-center mt-3">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faBuilding} className="nav-icon me-3 text-secondary" />
-                                        <a class="dropdown-link my-2 text-secondary" href="#">Informacion Fiscal</a>
+                                        <a className="dropdown-link my-2 text-secondary" href="#">Informacion Fiscal</a>
                                     </div>
                                 </li>
                             </ul>

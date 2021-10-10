@@ -11,6 +11,10 @@
 
   /* FONT SIZE */
   --normalSize: 20px;
+
+  /* INPUT SELECT */
+  --input-title:18px;
+  --input-content:16px;
 }
 
 *{
@@ -20,4 +24,9 @@
 body{
   font-size:16px;
   background-color: var(--third);
+}
+
+/* INPUTS */
+.input-title {
+  font-size:var(--IS-size-title);
 }

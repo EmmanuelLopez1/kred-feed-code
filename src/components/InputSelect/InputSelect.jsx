@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import './InputSelect.css'
 
-export const InputSelect = () => {
+
+export const InputSelect = ({ children }) => {
     return (
-        <select name="select">
-            <option value="value1">Value 1</option>
-            <option value="value2" selected>Value 2</option>
-            <option value="value3">Value 3</option>
-        </select>
+        <>
+            <label htmlFor="select" className="input-title mt-5 mb-1 text-secondary">Ingresa tu genero</label>
+            <select name="select" id="select" className="inputSelect w-100 text-secondary">
+                {
+                    children
+                }
+            </select>
+        </>
     )
 }
