@@ -22,7 +22,31 @@
     background-color: var(--primary);
 }
 
-.nav-item:hover > a{
+
+.nav-item:hover  .nav-link-text{
     color: var(--secondary) !important;
 }
+
+.nav-item:hover  .nav-icon{
+    color: var(--secondary) !important;
+}
+
+.nav-link:hover{
+    cursor: pointer !important;
+}
+
+.nav-link-text{
+    letter-spacing: 2px !important;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.nav-icon{
+    width: 35px;
+    display: block;
+    color:black;
+    height: 100%;
+}
+
+
     
