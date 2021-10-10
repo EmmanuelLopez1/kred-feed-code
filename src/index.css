@@ -4,6 +4,7 @@
   /* COLORS */
   --primary:#FEEBD9;
   --secondary:#F57C00;
+  --third:#EEEEEE;
 
   /* FONT FAMMILY */
   --mainFont:'Montserrat', sans-serif;
@@ -18,4 +19,5 @@
 
 body{
   font-size:16px;
+  background-color: var(--third);
 }

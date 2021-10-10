@@ -11,7 +11,7 @@ import { faUserCheck } from '@fortawesome/free-solid-svg-icons'
 
 export const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light border-bottom border-primary border-1 p-3">
+        <nav className="navbar navbar-expand-lg navbar-light border-bottom border-primary border-1 p-3 bg-light">
             <div className="container-fluid">
                 <img src={logoKredFeed} alt="" className="navbar-logo d-block" />
                 <button className="navbar-toggler navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
