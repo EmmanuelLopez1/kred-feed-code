@@ -1,0 +1,28 @@
+@import url('../../index.css');
+
+.navbar-logo{
+    display:block;
+    width: 120px;
+}
+
+.navbar-menu{
+    border: none;
+    background: transparent;
+}
+
+.navbar-menu:focus{
+    box-shadow: none;
+}
+
+.nav-item{
+    font-size:var(--normalSize);
+}
+
+.nav-item:hover{
+    background-color: var(--primary);
+}
+
+.nav-item:hover > a{
+    color: var(--secondary) !important;
+}
+    
