@@ -1,0 +1,7 @@
+@import url(../../index.css);
+
+.input-date{
+    padding-left: 5px;
+    outline:none;
+    font-size: var(--input-content);
+}

@@ -1,14 +1,16 @@
 import React from 'react'
 import {InputSelect} from '../InputSelect/InputSelect'
 
-export const InputSelectContainer = ({options})=>{
+export const InputSelectContainer = ({options, title})=>{
     
     return(
-        <InputSelect>
+        <InputSelect title={title}>
             {
+
                 options.map(element =>{
-                    return <option value="${element}">{element}</option>
-                })            
+                    return <option value={element} key={element}>{element}</option>
+                })             
+
             }
         </InputSelect>
     )

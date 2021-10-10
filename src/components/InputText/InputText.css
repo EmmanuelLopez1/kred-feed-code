@@ -7,7 +7,6 @@
     padding-bottom: 5px;
     outline: none;
     color: var(--secondary);
-    font-size:18px;
 }
 
 .inputText::placeholder{
