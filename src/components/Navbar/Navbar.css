@@ -1,7 +1,6 @@
 @import url('../../index.css');
 
 .navbar-logo{
-    display:block;
     width: 120px;
 }
 
@@ -14,6 +13,8 @@
     box-shadow: none;
 }
 
+/* Elementos del menu */
+
 .nav-item{
     font-size:var(--normalSize);
 }
@@ -21,7 +22,6 @@
 .nav-item:hover{
     background-color: var(--primary);
 }
-
 
 .nav-item:hover  .nav-link-text{
     color: var(--secondary) !important;
@@ -31,21 +31,41 @@
     color: var(--secondary) !important;
 }
 
+/* Enlaces del menu */
+
 .nav-link:hover{
     cursor: pointer !important;
 }
 
 .nav-link-text{
-    letter-spacing: 2px !important;
+    letter-spacing: 1px !important;
     margin: 0px;
     font-weight: 500;
 }
 
 .nav-icon{
     width: 35px;
-    display: block;
     color:black;
     height: 100%;
+}
+
+/* Dropdowm */
+.dropdown-menu{
+    border: 0px !important;
+    background-color: var(--primary);
+}
+
+.dropdown-item{
+    /* letter-spacing: 2px !important; */
+    font-weight: 500;
+}
+
+.dropdown-item:hover{
+    background-color: white !important;
+}
+
+.dropdown-link{
+    text-decoration: none;
 }
 
 
