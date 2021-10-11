@@ -31,3 +31,25 @@ body{
 .input-title {
   font-size:var(--IS-size-title);
 }
+
+.input-icon-content{
+  position: relative;
+}
+
+.input-icon{
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.input-icon:hover{
+  transform: scale(1.2);
+}
+
+.input-icon-content:hover .input-info{
+  display: block;
+}
+
+.sm-cards{
+  height: 300px;
+}

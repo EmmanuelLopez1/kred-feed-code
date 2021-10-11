@@ -68,5 +68,11 @@
     text-decoration: none;
 }
 
+@media(min-width: 992px){
+    .dropdown-menu{
+        margin-left:calc(100% - 237px);
+    }
+}
+
 
     

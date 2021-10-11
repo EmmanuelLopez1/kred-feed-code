@@ -3,7 +3,7 @@
 .inputText{
     border: none;
     border-bottom: 2px solid var(--secondary);
-    width: 100%;
+    width: 95%;
     padding-bottom: 5px;
     outline: none;
     color: var(--secondary);

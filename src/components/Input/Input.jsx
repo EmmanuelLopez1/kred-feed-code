@@ -1,8 +1,19 @@
 import React from 'react'
 import './Input.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { InputInfo } from '../InputInfo/InputInfo'
 
-export const Input = ({placeholder, type})=>{
-    return(
-        <input type={type && type || 'text'} className="input-title inputText mt-5" placeholder={placeholder}/>
+export const Input = ({ placeholder, type, icon, text}) => {
+    return (
+        <>
+            <div className="mt-5 d-flex align-items-center justify-content-between">
+                <input type={type && type || 'text'} className="input-title inputText" placeholder={placeholder} />
+                <div className="input-icon-content">
+                    <InputInfo text={text}/>
+                    <FontAwesomeIcon icon={icon && faQuestion} className="input-icon text-secondary" />                
+                </div>
+            </div>
+        </>
     )
 }

@@ -1,0 +1,28 @@
+@import url(../../index.css);
+
+
+.input-info{
+    width: 500px;
+    font-size: 14px;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+}
+
+.input-info::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    margin-left: 169px;
+    margin-top: 11px;
+    border-top:10px solid var(--secondary);
+    border-bottom: 10px solid transparent !important;
+    border-left: 10px solid transparent !important;
+    border-right: 10px solid transparent !important;
+    
+}
