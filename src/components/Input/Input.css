@@ -1,0 +1,15 @@
+@import url(../../index.css);
+
+.inputText{
+    border: none;
+    border-bottom: 2px solid var(--secondary);
+    width: 100%;
+    padding-bottom: 5px;
+    outline: none;
+    color: var(--secondary);
+}
+
+.inputText::placeholder{
+    color: var(--secondary);
+    font-size: 16px;
+}

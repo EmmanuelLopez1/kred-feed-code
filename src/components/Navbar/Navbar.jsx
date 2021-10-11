@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.css'
 
@@ -20,10 +21,11 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse my-2" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item my-2 px-2">
-                            <a className="nav-link d-flex align-items-center">
+
+                            <Link to="/" className="nav-link d-flex align-items-center">
                                 <FontAwesomeIcon icon={faHome} className="nav-icon me-3" />
                                 <p className="nav-link-text text-dark">Home</p>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item my-2 px-2">
                             <a className="nav-link d-flex align-items-center" id="dropdownMenuLink" data-bs-toggle="dropdown">
@@ -35,14 +37,14 @@ export const Navbar = () => {
                                 <li className="d-flex align-items-center">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faUserCheck} className="nav-icon me-3 text-secondary" />
-                                        <a className="dropdown-link my-2 text-secondary" href="#">Representante Legal</a>
+                                        <Link to="/perfil/representante-legal" className="dropdown-link my-2 text-secondary">Representante Legal</Link>
                                     </div>
                                 </li>
 
                                 <li className="d-flex align-items-center mt-3">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faBuilding} className="nav-icon me-3 text-secondary" />
-                                        <a className="dropdown-link my-2 text-secondary" href="#">Informacion Fiscal</a>
+                                        <Link to="/perfil/informacion-fiscal" className="dropdown-link my-2 text-secondary">Informacion Fiscal</Link>
                                     </div>
                                 </li>
                             </ul>
