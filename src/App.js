@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/kred-feed/">
             <Page>
-              <Home/>
+              <Home />
             </Page>
           </Route>
 
@@ -23,8 +23,7 @@ function App() {
               <RepresentanteLegal />
             </Page>
           </Route>
-
-          <Route exact path="/perfil/informacion-fiscal">
+          <Route exact path="/kred-feed/perfil/informacion-fiscal">
             <Page>
               <InformacionFiscal />
             </Page>

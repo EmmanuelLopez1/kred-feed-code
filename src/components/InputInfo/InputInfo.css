@@ -1,28 +1,35 @@
 @import url(../../index.css);
 
+:root{
+    --input-info-border:2px;
+}
 
 .input-info{
-    width: 500px;
-    font-size: 14px;
     display: none;
-    padding: 10px;
     position: absolute;
-    bottom: 0;
-    border: 2px solid var(--primary);
-    background-color: var(--primary);
+    width: 350px;
+    margin-left: -370px;
+    background-color: var(--primary); 
+    font-size: 14px;
+    padding: 10px;
+    border: var(--input-info-border) solid var(--secondary);
 }
 
 .input-info::after{
     content:'';
-    display: block;
-    position: absolute;
     width: 10px;
     height: 20px;
-    margin-left: 169px;
-    margin-top: 11px;
-    border-top:10px solid var(--secondary);
+    position:absolute;
+    left:calc(100% + var(--input-info-border));
+    top: calc(0% - var(--input-info-border));
+    border-top:10px solid transparent !important;
     border-bottom: 10px solid transparent !important;
-    border-left: 10px solid transparent !important;
+    border-left: 10px solid var(--secondary) !important;
     border-right: 10px solid transparent !important;
     
+}
+
+.input-info-link{
+    color: var(--secondary);
+    font-weight:600;
 }

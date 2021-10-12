@@ -1,15 +1,30 @@
 @import url(../../index.css);
 
-.inputText{
-    border: none;
-    border-bottom: 2px solid var(--secondary);
-    width: 95%;
-    padding-bottom: 5px;
-    outline: none;
-    color: var(--secondary);
+.inputText {
+  border: none;
+  border-bottom: 2px solid var(--secondary);
+  width: 95%;
+  padding-bottom: 5px;
+  outline: none;
+  color: var(--secondary);
 }
 
-.inputText::placeholder{
-    color: var(--secondary);
-    font-size: 16px;
+.inputText::placeholder {
+  color: var(--secondary);
+  font-size: 16px;
+}
+
+.input-icon {
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.input-icon:hover {
+  transform: scale(1.2);
+}
+
+.input-icon-content:hover .input-info {
+  display: block;
 }

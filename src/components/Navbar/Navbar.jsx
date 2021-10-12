@@ -30,23 +30,23 @@ export const Navbar = () => {
                         </li>
 
                         <li className="nav-item my-2 px-2">
-                            <a className="nav-link d-flex align-items-center" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                            <div className="nav-link d-flex align-items-center" id="dropdownMenuLink" data-bs-toggle="dropdown">
                                 <FontAwesomeIcon icon={faUser} className="nav-icon me-3" />
                                 <p className="nav-link-text text-dark">Perfil</p>
-                            </a>
+                            </div>
                             
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li className="d-flex align-items-center">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faUserCheck} className="nav-icon me-3 text-secondary" />
-                                        <Link to="/perfil/representante-legal" className="dropdown-link my-2 text-secondary">Representante Legal</Link>
+                                        <Link to="/kred-feed/perfil/representante-legal" className="dropdown-link my-2 text-secondary">Representante Legal</Link>
                                     </div>
                                 </li>
 
                                 <li className="d-flex align-items-center mt-3">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faBuilding} className="nav-icon me-3 text-secondary" />
-                                        <Link to="/perfil/informacion-fiscal" className="dropdown-link my-2 text-secondary">Informacion Fiscal</Link>
+                                        <Link to="/kred-feed/perfil/informacion-fiscal" className="dropdown-link my-2 text-secondary">Informacion Fiscal</Link>
                                     </div>
                                 </li>
                             </ul>

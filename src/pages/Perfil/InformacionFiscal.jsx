@@ -5,9 +5,10 @@ import { InputSelectContainer } from '../../components/InputSelectContainer/Inpu
 import { InputDate } from '../../components/InputDate/InputDate'
 import { Countries } from '../../components/Countries/Countries'
 import { InputFile } from '../../components/InputFile/InputFile'
+import { FiscalData } from '../data/FiscalData.js';
 
 export const InformacionFiscal = () => {
-    const razonSocial = 'Es el nombre oficial por el que la empresa consta legalmente, es decir, la denominación que aparece en los documentos oficiales de constitución de la compañía como persona jurídica, y se inscribe en el Registro Público de la Propiedad y el Comercio.'
+    console.log(FiscalData);
 
     return (
         <>
@@ -15,16 +16,18 @@ export const InformacionFiscal = () => {
                 <div className="row">
                     <h1 className="text-center mt-5">Informacion Fiscal</h1>
                     <Card title="Infromacion general" clases='col-lg-6'>
-                        <Input placeholder="Razon social" icon={true} text={razonSocial}/>
-                        <Input placeholder="Nombre comercial" />
+                        {
+                            FiscalData.map(element =>{
+                                return <Input icon={true} placeholder={element.placeholder} text={element.text} linkTo={element.link} />
+                            })
+                        }
                         <Countries title="Nacionalidad" />
-                        <InputDate title="Fecha de constitucion" />
-                        <Input placeholder="Regimen Fiscal" />
-                        <Input placeholder="Industria" />
+                        <InputDate title="Fecha de constitucion"/>
+                        <Input placeholder="Industria"/>
                     </Card>
 
                     <Card title="Documentacion" clases='col-lg-5'>
-                        <Input placeholder="RFC" />
+                        <Input placeholder="RFC" icon={true} text={'Obtener mi RFC'} link=''/>
                         <InputFile title={'Comprobante de domicilio'} />
                     </Card>
                 </div>
