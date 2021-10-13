@@ -25,7 +25,7 @@ function App() {
           </Route>
           <Route exact path="/kred-feed/perfil/informacion-fiscal">
             <Page>
-              <InformacionFiscal />
+                <InformacionFiscal/>
             </Page>
           </Route>
         </Switch>
