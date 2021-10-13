@@ -5,46 +5,56 @@ import { InputSelectContainer } from '../../components/InputSelectContainer/Inpu
 import { InputDate } from '../../components/InputDate/InputDate'
 import { Countries } from '../../components/Countries/Countries'
 import { InputFile } from '../../components/InputFile/InputFile'
+import { InputContainer } from '../../components/InputContainer/InputContainer';
 
 export const RepresentanteLegal = () => {
     return (
         <>
             <h1 className="text-center mt-5">Representante Legal</h1>
-            <Card title="Informacion general">
-                <Input placeholder="Nombre" />
-                <InputSelectContainer options={['Hombre', 'Mujer']} title="Genero" />
-                <InputDate title="Nacionalidad" />
-                <Countries title="Pais de Nacimiento" />
-                <InputSelectContainer options={['Casado/a', 'Divorciado/a', 'Soltero/a', 'Union libre', 'Viudo']} title='Estado civil:' />
-            </Card>
+            <div className="container">
 
-            <Card title="Lugar de residencia">
-                <Countries title="Pais:" />
-                <Input placeholder='Entidad Federativa o Estado' />
-                <Input placeholder="Colonia o Urbanizacion" />
-                <Input placeholder="Codigo Postal" />
-                <Input placeholder="Calle" />
-                <Input placeholder="Numero Ext." />
-                <Input placeholder="Numero Int." />
-                <Input placeholder="Numero Ext." />
-            </Card>
+                <div className="row">
+                    <Card title="Lugar de residencia" clases="col-lg-6">
+                        <Countries title="Pais:" />
+                        <InputContainer placeholder='Entidad Federativa o Estado' />
+                        <InputContainer placeholder="Colonia o Urbanizacion" />
+                        <InputContainer placeholder="Codigo Postal" />
+                        <InputContainer placeholder="Calle" />
+                        <InputContainer placeholder="Numero Ext." />
+                        <InputContainer placeholder="Numero Int." />
+                        <InputContainer placeholder="Numero Ext." />
+                    </Card>
 
-            <Card title="Datos de contacto">
-                <Input placeholder="Telefono" type="tel" />
-                <Input placeholder="Correo Electronico" type="mail" />
-            </Card>
+                    <Card title="Informacion general" clases="col-lg-5">
+                        <InputContainer placeholder="Nombre" />
+                        <InputSelectContainer options={['Hombre', 'Mujer']} title="Genero" />
+                        <InputDate title="Nacionalidad" />
+                        <Countries title="Pais de Nacimiento" />
+                        <InputSelectContainer options={['Casado/a', 'Divorciado/a', 'Soltero/a', 'Union libre', 'Viudo']} title='Estado civil:' />
+                    </Card>
+                </div>
 
-            <Card title="Documentacion">
-                <Input placeholder="CURP" />
-                <Input placeholder="RFC" />
-                <InputFile title={'Comprobante de domicilio'} />
-            </Card>
+                <div className="row mt-5">
+                    <Card title="Documentacion" clases="col-lg-6">
+                        <InputContainer placeholder="CURP" />
+                        <InputContainer placeholder="RFC" />
+                        <InputFile title={'Comprobante de domicilio'} />
+                    </Card>
 
-            <Card title="Cuenta bancaria">
-                <Input placeholder="Ingresa tu cuenta CLABE" />
-                <InputSelectContainer options={['Bancomer', 'Santander']} title="Seleccione su banco" />
-            </Card>
+                    <Card title="Datos de contacto" clases="col-lg-5">
+                        <InputContainer placeholder="Telefono" type="tel" />
+                        <InputContainer placeholder="Correo Electronico" type="mail" />
+                    </Card>
+                </div>
+                
+                <div className="row my-5 d-flex justify-content-start">
+                    <Card title="Cuenta bancaria" clases='col-lg-6 m-0'>
+                        <InputContainer placeholder="Ingresa tu cuenta CLABE" />
+                        <InputSelectContainer options={['Bancomer', 'Santander']} title="Seleccione su banco" />
+                    </Card>
+                </div>
 
+            </div>
         </>
     )
 }

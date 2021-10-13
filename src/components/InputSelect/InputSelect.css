@@ -5,3 +5,7 @@
     border: none;
     font-size: var(--input-content);
 }
+
+.input-title {
+    font-size:var(--IS-size-title);
+  }

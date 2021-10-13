@@ -26,12 +26,3 @@ body{
   font-size:16px;
   background-color: var(--third);
 }
-
-/* INPUTS */
-.input-title {
-  font-size:var(--IS-size-title);
-}
-
-.sm-cards{
-  height: 300px;
-}

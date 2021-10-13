@@ -27,10 +27,10 @@ export const InformacionFiscal = () => {
                         <InputContainer placeholder="Industria"/> 
                     </Card>
 
-                    {/* <Card title="Documentacion" clases='col-lg-5'>
-                        <Input placeholder="RFC" icon={true} text={'Obtener mi RFC'} link=''/>
+                    <Card title="Documentacion" clases='col-lg-5'>
+                        <InputContainer placeholder="RFC" icon={true} text={'Obtener mi RFC'} link=''/>
                         <InputFile title={'Comprobante de domicilio'} />
-                    </Card> */}
+                    </Card>
                 </div>
 
                 <div className="row mt-5">

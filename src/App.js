@@ -6,7 +6,6 @@ import { Home } from './pages/Home'
 import { RepresentanteLegal } from './pages/Perfil/RepresentanteLegal'
 import { InformacionFiscal } from './pages/Perfil/InformacionFiscal'
 
-
 function App() {
   return (
     <>
@@ -20,12 +19,12 @@ function App() {
 
           <Route exact path="/kred-feed/perfil/representante-legal">
             <Page>
-              <RepresentanteLegal />
+                <RepresentanteLegal />
             </Page>
           </Route>
           <Route exact path="/kred-feed/perfil/informacion-fiscal">
             <Page>
-                <InformacionFiscal/>
+              <InformacionFiscal />
             </Page>
           </Route>
         </Switch>

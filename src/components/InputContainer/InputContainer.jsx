@@ -76,7 +76,6 @@ export const InputContainer = ({ placeholder, type, text, link, maxLength }) => 
 
                 validate={(values) => {
                     let errores = validateInput(values)
-
                     return errores
                 }}
 
