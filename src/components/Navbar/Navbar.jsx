@@ -23,7 +23,7 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse my-2 w-25 justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item my-2 px-2">
-                            <Link to="/" className="nav-link d-flex align-items-center">
+                            <Link to="/kred-feed" className="nav-link d-flex align-items-center">
                                 <FontAwesomeIcon icon={faHome} className="nav-icon me-3" />
                                 <p className="nav-link-text text-dark">Home</p>
                             </Link>
