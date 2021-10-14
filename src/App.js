@@ -17,12 +17,12 @@ function App() {
             </Page>
           </Route>
 
-          <Route exact path="/perfil/representante-legal">
+          <Route exact path="/kred-feed/perfil/representante-legal">
             <Page>
                 <RepresentanteLegal />
             </Page>
           </Route>
-          <Route exact path="/perfil/informacion-fiscal">
+          <Route exact path="/kred-feed/perfil/informacion-fiscal">
             <Page>
               <InformacionFiscal />
             </Page>
