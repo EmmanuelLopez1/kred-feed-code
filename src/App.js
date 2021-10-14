@@ -11,18 +11,18 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/kred-feed/">
+          <Route exact path="/">
             <Page>
               <Home />
             </Page>
           </Route>
 
-          <Route exact path="/kred-feed/perfil/representante-legal">
+          <Route exact path="/perfil/representante-legal">
             <Page>
                 <RepresentanteLegal />
             </Page>
           </Route>
-          <Route exact path="/kred-feed/perfil/informacion-fiscal">
+          <Route exact path="/perfil/informacion-fiscal">
             <Page>
               <InformacionFiscal />
             </Page>
