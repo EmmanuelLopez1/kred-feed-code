@@ -22,7 +22,7 @@ Los inputs tienen validaciones para evitar que se dejen campos vacios, o se ingr
 
 ** Informacion: **
 Se le da retroalimentacion al usuario en caso de no comprender alguno de los terminos mencionados.
-![alt text](https://github.com/EmmanuelLopez1/kred-feed-code/tree/master/images/kred-feed.png)
+![alt text](https://github.com/EmmanuelLopez1/kred-feed-code/blob/master/images/kred-feed.png)
 
 ** Responsive **
 La pagina funciona en dispositivos moviles para dar una mejor experiencia al usuario.
