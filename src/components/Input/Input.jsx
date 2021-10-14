@@ -5,12 +5,12 @@ import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 import { InputInfo } from '../InputInfo/InputInfo'
 
 
-export const Input = ({ placeholder, type, icon, text, link, handleChange, handleBlur, error, values, handleSubmit}) => {
+export const Input = ({ placeholder, type, icon, text, link, handleChange, handleBlur, error, values, handleSubmit }) => {
     return (
         <>
-            <div className="mt-5 d-flex align-items-center justify-content-between">
+            <label htmlFor="data" className="input-title mt-5 mb-1 text-secondary">{`${placeholder}:`}</label>
+            <div className=" d-flex align-items-center justify-content-between">
                 <input
-                    placeholder={placeholder}
                     type={type && type || 'text'}
                     className="input-title inputText"
                     name="data"

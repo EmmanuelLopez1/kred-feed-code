@@ -17,11 +17,11 @@ export const RepresentanteLegal = () => {
                         <Countries title="Pais:" />
                         <InputContainer placeholder='Entidad Federativa o Estado' />
                         <InputContainer placeholder="Colonia o Urbanizacion" />
-                        <InputContainer placeholder="Codigo Postal" />
+                        <InputContainer placeholder="Codigo Postal" type="number" />
                         <InputContainer placeholder="Calle" />
-                        <InputContainer placeholder="Numero Ext." />
-                        <InputContainer placeholder="Numero Int." />
-                        <InputContainer placeholder="Numero Ext." />
+                        <InputContainer placeholder="Numero Ext." type="number"/>
+                        <InputContainer placeholder="Numero Int." type="number"/>
+                        <InputContainer placeholder="Numero Ext." type="number"/>
                     </Card>
 
                     <Card title="Informacion general" clases="col-lg-5">
@@ -41,7 +41,7 @@ export const RepresentanteLegal = () => {
                     </Card>
 
                     <Card title="Datos de contacto" clases="col-lg-5">
-                        <InputContainer placeholder="Telefono" type="tel" />
+                        <InputContainer placeholder="Telefono" type="tel" maxLength={10}/>
                         <InputContainer placeholder="Correo Electronico" type="mail" />
                     </Card>
                 </div>

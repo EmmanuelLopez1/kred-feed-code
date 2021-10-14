@@ -20,7 +20,7 @@ export const InputContainer = ({ placeholder, type, text, link, maxLength, icon}
                     validateNum(values, errores, maxLength)
                     break;
 
-                case 'num':
+                case 'number':
                     validateNum(values, errores, maxLength)
                     break;
                 
@@ -44,8 +44,9 @@ export const InputContainer = ({ placeholder, type, text, link, maxLength, icon}
 
     const validateNum = (values, errores, maxLength) => {
         let num = ''
+        console.log(values);
 
-        for (let word of values.data) {
+        for (let word in values.data) {
             if (regexNum.test(word)) {
                 num += word
             }
