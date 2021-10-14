@@ -1,7 +1,7 @@
 import React from 'react'
 import './InputInfo.css'
 
-export const InputInfo = ({ text, link, linkText }) => {
+export const InputInfo = ({ text, link}) => {
     return (
         <>
             <div className="input-info">

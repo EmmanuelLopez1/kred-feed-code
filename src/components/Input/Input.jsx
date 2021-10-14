@@ -5,7 +5,7 @@ import { faQuestion } from '@fortawesome/free-solid-svg-icons'
 import { InputInfo } from '../InputInfo/InputInfo'
 
 
-export const Input = ({ placeholder, type, icon, text, link, handleChange, handleBlur, error, values}) => {
+export const Input = ({ placeholder, type, icon, text, link, handleChange, handleBlur, error, values, handleSubmit}) => {
     return (
         <>
             <div className="mt-5 d-flex align-items-center justify-content-between">
@@ -17,6 +17,7 @@ export const Input = ({ placeholder, type, icon, text, link, handleChange, handl
                     value={values.data}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    key={placeholder}
                 />
 
                 <div className="input-icon-content">

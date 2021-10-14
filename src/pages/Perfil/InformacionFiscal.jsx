@@ -12,39 +12,38 @@ export const InformacionFiscal = () => {
 
     return (
         <>
-            <div className="container mb-5">
-                <div className="row">
-                    <h1 className="text-center mt-5">Informacion Fiscal</h1>
-                    <Card title="Infromacion general" clases='col-lg-6'>
-                        {
-                            FiscalData.map(element =>{
-                                console.log(element.link);
-                                return <InputContainer icon={true} placeholder={element.placeholder} text={element.text} linkTo={element.link}/>
-                            })
-                        } 
-                        <Countries title="Nacionalidad" />
-                        <InputDate title="Fecha de constitucion"/>
-                        <InputContainer placeholder="Industria"/> 
-                    </Card>
+                <div className="container mb-5">
+                    <div className="row">
+                        <h1 className="text-center my-5 text-info">Informacion Fiscal</h1>
+                        <Card title="Informacion general" clases='col-lg-6'>
+                            {
+                                FiscalData.map(element => {
+                                    return <InputContainer icon={true} placeholder={element.placeholder} text={element.text} link={element.link} />
+                                })
+                            }
+                             <Countries title="Nacionalidad" />
+                            <InputDate title="Fecha de constitucion" />
+                            <InputContainer placeholder="Industria" />
+                        </Card>
 
-                    <Card title="Documentacion" clases='col-lg-5'>
-                        <InputContainer placeholder="RFC" icon={true} text={'Obtener mi RFC'} link=''/>
-                        <InputFile title={'Comprobante de domicilio'} />
-                    </Card>
+                        <Card title="Documentacion" clases='col-lg-5'>
+                            <InputContainer placeholder="RFC" icon={true} text={'Obtener mi RFC'} link='' />
+                            <InputFile title={'Comprobante de domicilio'} />
+                        </Card>
+                    </div>
+
+                    <div className="row mt-5">
+                        <Card title="Cuenta bancaria" clases='col-lg-6 sm-cards'>
+                            <InputContainer placeholder="Ingresa tu cuenta CLABE" type="num" maxLength='16' />
+                            <InputSelectContainer options={['Bancomer', 'Santander']} title="Seleccione su banco" />
+                        </Card>
+
+                        <Card title="Datos de contacto" clases="col-lg-5 sm-cards">
+                            <InputContainer placeholder="Telefono" type="tel" />
+                            <InputContainer placeholder="Correo Electronico" type="mail" />
+                        </Card>
+                    </div>
                 </div>
-
-                <div className="row mt-5">
-                    <Card title="Cuenta bancaria" clases='col-lg-6 sm-cards'>
-                        <InputContainer placeholder="Ingresa tu cuenta CLABE" type="num" maxLength='16'/>
-                        <InputSelectContainer options={['Bancomer', 'Santander']} title="Seleccione su banco" />
-                    </Card>
-
-                    <Card title="Datos de contacto" clases="col-lg-5 sm-cards">
-                        <InputContainer placeholder="Telefono" type="tel" />
-                        <InputContainer placeholder="Correo Electronico" type="mail" />
-                    </Card>
-                </div>
-            </div>
         </>
     )
 }
