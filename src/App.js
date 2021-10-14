@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/kred-feed">
             <Page>
               <Home />
             </Page>
