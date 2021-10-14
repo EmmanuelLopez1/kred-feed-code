@@ -39,14 +39,14 @@ export const Navbar = () => {
                                 <li className="d-flex align-items-center">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faUserCheck} className="nav-icon me-3 text-secondary" />
-                                        <Link to="/perfil/representante-legal" className="dropdown-link my-2 text-secondary">Representante Legal</Link>
+                                        <Link to="/kred-feed/perfil/representante-legal" className="dropdown-link my-2 text-secondary">Representante Legal</Link>
                                     </div>
                                 </li>
 
                                 <li className="d-flex align-items-center mt-3">
                                     <div className="dropdown-item text-secondary">
                                         <FontAwesomeIcon icon={faBuilding} className="nav-icon me-3 text-secondary" />
-                                        <Link to="/perfil/informacion-fiscal" className="dropdown-link my-2 text-secondary">Informacion Fiscal</Link>
+                                        <Link to="/kred-feed/perfil/informacion-fiscal" className="dropdown-link my-2 text-secondary">Informacion Fiscal</Link>
                                     </div>
                                 </li>
                             </ul>
